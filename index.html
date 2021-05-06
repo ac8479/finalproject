@@ -3,36 +3,71 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.min.css">
     <script src="script.js"> </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="firstContainer">
+    <!–– sidenav from https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#socialMedia">SOCIAL MEDIA</a>
+      <a href="#toxicity">TOXICITY</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer;margin:0;padding:10px;" onclick="openNav()">&#9776;</span>
+    <div id="home" data-aos="fade-up">
       <p>PARASOCIAL</p>
     </div>
-    <div class="scrollIndicator">
+    <div id="scrollIndicator" data-aos="fade-up">
       <p>SCROLL DOWN</p>
-      <img src="arrow down.png">
+      <i class="arrow down"></i>
     </div>
-    <div class="secondContainer">
-      <div class="definitionContainer">
+    <div id="about">
+      <div id="definitionContainer" data-aos="fade-up">
         <h1>What are <span style="font-weight:800">Parasocial</span> Relationships?</h1>
-        <p>Parasocial relationships are one-sided relationships...</p>
+        <p>Parasocial relationships are one-sided relationships. These relationships involve one party being emotionally attached to the other, while the other has no knowledge of them. This sort of relationship has been around for as long as celebrities have existed. Parasocial relationships are painted as completely negative, but they are not inherently bad. Humans are naturally social creatures and parasocial relationships are a sort of outlet. It starts to negatively affect people when they get too invested and do not maintain real life relationships.</p>
       </div>
     </div>
-    <div class="thirdContainer">
-      <div class="socialMediaContainer">
+    <div id="socialMedia" data-aos="fade-up">
+      <div id="socialMediaContainer" data-aos="fade-up">
         <h1>Social Media</h1>
       </div>
-      <p>Parasocial relationships have been impacted by the increased usage of social media...</p>
+      <p data-aos="fade-up">Parasocial relationships are nothing new. Fans of mainstream media have had paparazzi and gossip magazines to engross them into the lives of celebrities and public figures. However, the introduction of social media has caused an increase in parasocial relationships. Social media provides a form of interaction between a celebrity and their audience. Platforms like Twitch give users a direct way to communicate with creators they like. This interaction has caused people to be more invested, as the interaction gives them some sort of validation from the person they idolize. </p>
     </div>
-    <div class="fourthContainer">
-      <blockquote class="twitter-tweet"><p lang="en" dir="ltr">this is why your dog died 😍🤞 <a href="https://t.co/e8oisN1Fxl">https://t.co/e8oisN1Fxl</a></p>&mdash; milk (@ggffhcddau) <a href="https://twitter.com/ggffhcddau/status/1367538908859400205?ref_src=twsrc%5Etfw">March 4, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      <div class="toxicityContainer">
+    <div id="toxicity">
+      <div class="toxicTweets" data-aos="fade-up">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">this is why your dog died 😍🤞 <a href="https://t.co/e8oisN1Fxl">https://t.co/e8oisN1Fxl</a></p>&mdash; milk (@ggffhcddau) <a href="https://twitter.com/ggffhcddau/status/1367538908859400205?ref_src=twsrc%5Etfw">March 4, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
+              <li class="glide__slide"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">THE KIDS ARE ATTACKING <a href="https://t.co/AHH7jivfrk">pic.twitter.com/AHH7jivfrk</a></p>&mdash; daphne (@39daph) <a href="https://twitter.com/39daph/status/1328950811691528196?ref_src=twsrc%5Etfw">November 18, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
+              <li class="glide__slide"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">My Stalking Experience<br><br>Read: <a href="https://t.co/83dZrBrGYF">https://t.co/83dZrBrGYF</a></p>&mdash; brooke ♡ (@brookeab) <a href="https://twitter.com/brookeab/status/1317242986489667586?ref_src=twsrc%5Etfw">October 16, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="arrow left"></i></button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="arrow right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div id="toxicityContainer" data-aos="fade-up">
         <h1>Toxicity</h1>
-        <p>Parasocial relationships on the internet have brought out extreme feelings for celebrities...</p>
+        <p>With people becoming more emotionally invested in their favorite celebrity or creator, a new breed of toxicity has emerged. Fans that identify themselves as stans (super fans) tend to have profiles that revolve around their personality of choice. Communities have started in order to support and promote the things that stans enjoy. While this seems productive and healthy, the obsession causes people to become too involved with the lives of others. This can be seen with the attacks stans have on people who criticize the person or thing they support. There are some examples to the left. Even though it seems like these attacks stay on the internet, it has real world repercussions. With the amount of information that people have on the internet, creators have been doxxed, which has led to swatting and stalking.</p>
       </div>
     </div>
+    <script src="script.js"> </script>
+    <script src="https://unpkg.com/@glidejs/glide"></script>
+    <script>
+      new Glide('.glide').mount()
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
