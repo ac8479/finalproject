@@ -84,32 +84,7 @@ body {
   text-align: center;
   margin: 0;
 }
-.arrow {
-  border: solid #202124;
-  border-width: 0px 2px 2px 0px;
-  display: inline-block;
-}
-.down {
-  margin-left: auto;
-  margin-right: auto;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  padding-top: 20px;
-  height: 20px;
-  width: 40px;
-}
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  height: 40px;
-  width: 40px;
-}
-.left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  height: 40px;
-  width: 40px;
-}
+
 
 #about {
   margin: 0;
@@ -159,11 +134,14 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #f3f3f3;
 }
 #socialMediaContainer h1{
   margin: 0;
   font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 40px;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
